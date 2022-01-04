@@ -1,0 +1,174 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Tiffany Yu</title>
+	<meta name= "description" content="This is my personal website where I showcase my experiences in work and club activities."> 
+	<link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
+	<link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
+	<link rel= "stylesheet" type="text/css" href="style.css">
+	<style>
+
+
+		#portrait{
+			width:100%;
+			padding-bottom: 0px;
+		}
+
+		#bio{
+			width: 100%;
+			height:550px;
+			background-color: #FEF6EB;
+		}
+
+		#biotitle{
+			text-align: center;
+			margin-top: 0px;
+		}
+
+		#biocontainer{
+			padding-top: 250px;
+			width:950px;
+			margin:auto;
+			text-align: center;
+		}
+
+		#experience{
+			height: 700px;
+			background-color:#FEF6EB;
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+
+		}
+
+		#experiencetitle{
+			text-align:center;
+			margin-top:0px;
+		}
+
+		#experiencecontainer{
+			padding-top:100px;
+			text-align: center;
+			background-color: #FEF6EB;
+			
+		}
+
+		.ex_box{
+			background-color:blue;
+			height: 400px;
+			width:400px;
+			margin:10px;
+			display:inline-block;
+			background-color: white;
+			vertical-align: top;
+			position:relative;
+			text-align:center;
+			
+		}
+
+		.ex_logo{
+			width:300px;
+			height:auto;
+			margin:auto;
+			margin-top: 120px;
+		}
+
+		#ttm_logo{
+			width:270px;
+			margin-top:60px;
+		}
+
+		#dt_logo{
+			width:250px;
+			margin-top:70px;
+		}
+
+		.overlaytext{
+			position:absolute;
+			/* top: 150px;
+			left:80px; */
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: neue-haas-unica, sans-serif;
+			font-weight: 200;
+			font-style: normal;
+			font-size:50px;
+			text-decoration:none;
+			color:white;
+			opacity:0;
+			
+		}
+		.ex_box:hover{
+			background-color: black;
+		}
+
+		.ex_box:hover .overlaytext{
+			opacity:1;
+			
+		}
+		.ex_box:hover img{
+			opacity:0;
+		}
+
+		#footer{
+			padding-top:100px;
+		}
+
+	</style>
+</head>  
+<body>
+	<div id="navbar">
+		<ul>
+			<li id="contact" class="navtext"><a href = "mailto: yutiffan@usc.edu" class="navhover"> contact </a></li>
+			<li class="navtext"><a href = "Yu_Tiffany_Resume.pdf" class="navhover" target="_blank"> resume </a></li>
+			<li class="navtext"><a href = "about.html" class="navhover"> about </a></li>
+			<li class="navtext"><a href = "index.html#experience" class="navhover"> work </a></li>
+			<!-- <li class="navtext"><a href = "index.html" class="navhover"> home </a></li> -->
+			<li id = "logo"> <a href = "index.html" ><img src ="img/logo.png" alt="umlaut-logo" id = "logoimg"></a>  </li>
+		</ul>
+	</div>	
+	
+	<img src="img/me portrait5.png" alt="me-portrait" id="portrait" class = "rellax" data-relax-speed = "-7">
+
+	<div id="bio"  >
+		<div id="biocontainer">
+			<p class= "header" id="biotitle"> a little bit about me </p>
+			<p class="bodytext" > I am a junior studying Computer Science and Business Administration at the University of Southern California. Whether it is designing efficient code or analyzing case studies, I love problem solving and coming up with creative solutions. I am especially interested in learning more about product management and product design. In my free time, I like to dance in the bathroom, doodle on my iPad, and browse Uber Eats.
+ 			</p>
+		</div>
+	</div>
+
+	<div id="experience">
+		<div id="experiencecontainer">
+			<p class = "header" id="experiencetitle"> my experiences </p>
+			<a href = "ttm.html"><div class = "ex_box"> 
+				<img src = "img/ttm.png" alt="ttm_logo" class = "ex_logo" id = "ttm_logo">
+				<div class = "overlaytext">6-month internship</div>  
+			</div></a>
+			<a href = "give.html"><div class = "ex_box"> 
+				<img src = "img/give logo.png" alt="give_logo" class = "ex_logo">
+				<div class = "overlaytext">mental health organization</div>
+			</div></a>
+			
+			<a href ="DT.html"><div class = "ex_box"> 
+				<img src = "img/DT.png" alt="DT_logo" class = "ex_logo" id = "dt_logo">
+				<div class = "overlaytext">USC student newspaper</div>
+			</div></a>
+		</div>
+	</div>
+	<div id = "footer">
+		<div class="bodytext alignleft" id="footertext">coded on <a href = "https://github.com/yutiffan" target="_blank">yutiffan</a> </div>
+			
+		<div class="bodytext alignright" id="footertext" > yutiffan@usc.edu   |    <a href="https://www.linkedin.com/in/yutiffan/" target="_blank">linkedin</a> </div>
+		
+	</div>
+	
+<!-- javascript plugins -->
+	<script src= "rellax-master/rellax.min.js"></script>
+
+	<script>
+		var rellax = new Rellax('.rellax');
+	</script>
+	
+</body>
+</html>

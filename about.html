@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiffany Yu - About</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
+    <link rel= "stylesheet" type="text/css" href="style.css">
+
+    <style>
+        #bigcontainer{
+            /* background-color: white; */
+            width:92%;
+            height:600px;
+            margin:auto;
+        }
+
+        #bigcontainer a{
+            text-decoration:none;
+            color:black;
+            font-weight: 500;
+        }
+        #smallcontainer{
+            /* background-color: wheat; */
+            width:600px;
+            float:left;
+            margin-right:80px;
+        }
+
+        .smallcontainer2{
+            background-color: white;
+            width:70%;
+            margin:auto;
+            
+        }
+
+
+        #title{
+            font-family: neue-haas-unica, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size:45px;
+            color:black;
+            text-align: left;
+            padding-top: 80px;
+        }
+        #titletext{
+            margin-top: 50px;
+            margin-bottom:150px;
+            font-size:19px;
+        }
+        
+
+        p{
+            margin:0px;
+        }
+
+        #mephoto{
+            float:left;
+            width:600px;
+            margin-top:15px;
+        }
+
+        #footer{
+            background-color: #E6F2F8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- this is navbar -->
+    <div id="navbar">
+		<ul>
+			<li id="contact" class="navtext"><a href = "mailto: yutiffan@usc.edu" class="navhover"> contact </a></li>
+			<li class="navtext"><a href = "Yu_Tiffany_Resume.pdf" class="navhover" target="_blank"> resume </a></li>
+			<li class="navtext"><a href = "index.html" class="navhover"> home </a></li>
+			<li id = "logo"> <a href = "index.html" ><img src ="img/logo.png" alt="umlaut-logo" id = "logoimg"></a>  </li>
+		</ul>
+	</div>
+
+    <!-- this is main content -->
+    <div id= "bigcontainer">
+        <!-- this is title  -->
+        <div id="smallcontainer">
+            <p class = "header rellax" id="title" data-rellax-speed="7"> Here's what yu should know.</p>
+            <p class = "bodytext" id="titletext" > 
+                Hello! <br><br>
+                My name is Tiffany Yu. I am a junior studying Computer Science and Business 
+                Administration at the University of Southern California. I was born in Torrance, California, but I was raised in Kaohsiung, Taiwan. 
+                <br> <br>
+
+                I am passionate about design and code. I like to combine my interests to create beautiful websites. Through web development, I 
+                continuously learn more about human-centered design. I hope to extend my UI/UX knowledge onto mobile application projects in the future. 
+                <br><br>
+
+                Combining all of my interests and experiences in business + technology + design, I am interested in learning more about product 
+                management and product design. 
+                <br><br>
+
+                In my free time, you can find me dancing in my bathroom, doodling on my iPad, and exploring LA.
+                <br><br>
+
+                Let's chat! You can reach me on <a href="https://www.linkedin.com/in/yutiffan/" target="_blank">Linkedin</a> or via <a href ="mailto: yutiffan@usc.edu">yutiffan@usc.edu</a>. 
+            </p>
+        </div>
+        <img src = "img/me.png" alt="photoofme" id="mephoto" class="rellax" data-rellax-speed="-7" >
+    </div>
+    
+
+    <!-- this is footer -->
+    <div id = "footer">
+		<div class="bodytext alignleft" id="footertext">coded on <a href = "https://github.com/yutiffan" target="_blank">yutiffan</a> </div>
+			
+		<div class="bodytext alignright" id="footertext" > yutiffan@usc.edu   |    <a href="https://www.linkedin.com/in/yutiffan/" target="_blank">linkedin</a> </div>
+		
+	</div>
+
+    <!-- javascript plugins -->
+	<script src= "rellax-master/rellax.min.js"></script>
+
+	<script>
+		var rellax = new Rellax('.rellax');
+	</script>
+</body>
+
+</html>
