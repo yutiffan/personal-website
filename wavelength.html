@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tiffany Yu - Give Foundation</title>
+    <title>Tiffany Yu - Wavelength</title>
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel= "stylesheet" type="text/css" href="style.css">
@@ -37,7 +37,7 @@
         #bodycontainer{
             background-color: white;
             width:100%;
-            height:1900px;
+            height:1700px;
             padding-top: 100px;
             
         }
@@ -46,16 +46,17 @@
             height:500px;
         }
 
-        #giveweb{
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-        }
         .iframes{
             text-align: center;
             /* background-color: blue; */
             height:400px;
             
         }
-  
+        
+        .bodyphoto{
+            height: 800px;
+            
+        }
 
         .bothcontainer{
             width:70%;
@@ -164,10 +165,11 @@
     <div id= "bigcontainer" class = "rellax" data-relax-speed = "7">
         <!-- this is title  -->
         <div id="smallcontainer">
-            <p class = "header" id="title"> GIVE Foundation </p>
-            <p class = "bodytext" id="titletext"> I am a founding member and the VP of Communication of a mental health organization 
-                at USC called GIVE Foundation. Our main mission is to help spread mental health resources, knowledge, and practice to 
-                college students. We take on this mission creatively — in forms of podcasts, videos, blog posts, and more.
+            <p class = "header" id="title"> Wavelength </p>
+            <p class = "bodytext" id="titletext"> Wavelength began in junior year as a final project for my software development course.
+                 Wavelength is a dating web app created to connect people based on music taste. Because of my 
+                 personal interest in the project, I wanted to continue building this app out as a personal project. I was able 
+                 to work with different frameworks, such as Firebase, and further build out each page.
             </p>
         </div>
     </div>
@@ -175,22 +177,26 @@
     <div class="fullcontainer">
         <div class="smallcontainer2">
             <div id = "one_c">
-                <p class = "header3" id = "info">Role: </p>
-                <p class = "bodytext" id = "info_des">VP of Communication</p>
-                <p class = "bodytext">Founding Member</p>
+                <p class = "header3" id = "info">Roles: </p>
+                <p class = "bodytext" id = "info_des">Ideation</p>
+                <p class = "bodytext">Front-end developer</p>
+                <p class = "bodytext">Back-end developer</p>
+
             </div>
             <div id = "two_c">
                 <p class = "header3" id = "info">Duration: </p>
-                <p class = "bodytext" id = "info_des">Jun 2020 - Present</p>
+                <p class = "bodytext" id = "info_des">May 2022 - July 2022</p>
             </div>
             <div id = "three_c">
                 <p class = "header3" id = "info">Tools: </p>
-                <p class = "bodytext" id = "info_des">Adobe Photoshop</p>
+                <p class = "bodytext" id = "info_des">Figma</p>
+                <p class = "bodytext" id = "info_des">React</p>
+                <p class = "bodytext" id = "info_des">Firebase</p>
+                <p class = "bodytext" id = "info_des">Material UI</p>
             </div>
             <div id = "four_c">
                 <p class = "header3" id = "info">Key Skills: </p>
-                <p class = "bodytext" id = "info_des">Social Media</p>
-                <p class = "bodytext" >Strategy Planning</p>
+                <p class = "bodytext" id = "info_des">Front-end development</p>
             </div>
             
         </div>
@@ -202,54 +208,74 @@
                 Context:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>During the summer of 2020, I went back home to Taiwan amid the pandemic. I quarantined at home 
-                    and I was miles apart from my friends. Although I was with family, staying at home everyday 
-                    eventually took a toll on my mental health. There were days where I just felt very unhappy. 
-                    When I told my friends on how I have been feeling, they also mentioned they felt the same way.</p>
+                <p>For the final project of my software development course, my team and I created a dating app based on music taste. 
+                    I was responsible for the idea, as well as developing the entire front end of the app. We built a CRUD app using 
+                    React js, Material UI, and Axios for front end and Postgres (database) and spring boot for backend. </p>
+
+                <p>We were able to complete the app but only on a basic level. You can learn more about our final project by looking 
+                    at our <a href="https://www.youtube.com/watch?v=MlZKbUDcHrY">demo video</a> and <a href="https://github.com/jhjullie/wavelength">Github repository</a>.</p>
+
+                <p>Since I was in charge of designing and developing the front end, I wanted to continue building out the web app 
+                    further and try out different back end frameworks. I saw this as an opportunity to learn more frameworks and 
+                    try building out the app as a full-stack engineer. </p>
             </div>
         </div>
         
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                Problem:
+                Project Concept:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>We realized that many students were feeling down during this period, but there was a lack of mental 
-                    health support and resources provided specifically for college students. </p>
+                <p>Wavelength is a web app that matches people based on their music tastes. Since human connections are built upon 
+                    shared interests and music is one that many share, we hope to foster more meaningful connections through an 
+                    algorithm based on music choices to find friends and concert buddies. This web app will be made for people who 
+                    love listening to music and meeting people with similar music tastes - essentially an app to connect people on 
+                    the same <i>wavelength</i>. </p>
+                <p>Upon creating an account, users will be asked to create a profile with their name, age, and music genre. A user's 
+                    profile will be available to people once they are matched with one another. To discover matches, users will “swipe” 
+                    either yes or no based on a short summary of another person's music tastes.</p>
             </div>
         </div>
 
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                Solution:
+                Implementation Design:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>We decided to create a mental health organization that will help normalize conversations of mental 
-                    health with students through podcasts, blogs, and videos. Because we lack the professional expertise, 
-                    we believe our most valuable source of information is our own individual experiences with mental health 
-                    as college students. Through our stories, we hope to destigmatize mental health and show students that 
-                    they are not alone. </p>
+                <p>For front end, I used Figma to create the UI/UX designs and React to build the actual app. For back end, 
+                    I used Firebase realtime database to store the users. I decided to use Firebase instead of Postgres because 
+                    the data would not be limited to local usage. Moreover, Firebase would allow me to easily deploy the app to the web.</p>
 
-                <p>As the VP of Communication, I am primarily in charge of managing the website and our social media accounts. 
-                    I plan and write copy for all social media posts. I also help in creating some of the graphics. Beyond 
-                    building the online presence of our organization, I also help spread word of GIVE through communicating with 
-                    professors and promoting to students in club fairs. </p>
+                
             </div>
         </div>
+
+        <!-- <div class = "bothcontainer">
+            <div class = "titlecontainer header3">
+                How we built it:
+            </div>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <p>Beginning with ideation, I sketched out simple wire frames for the main pages and its transitions. 
+                    After deciding on our main pages, we began creating the pages and prototyping. It was my first time 
+                    creating prototypes on Figma but I was able to quickly get the hang of it.  </p>
+
+                <img src="img/sketch.png" class="bodyphoto">
+
+                <p>We planned to build the app using Flutter, but we ran into problems as this was our first time using Flutter. 
+                    We were able to build out the main page but we were ultimately unable to connect the camera feature and other 
+                    pages due to the time constraint. Our Github repo can be found <a href="https://github.com/aaronwong25/trood" target="_blank">here</a>. </p>
+            </div>
+        </div> -->
+
         
         <div class= "bothcontainer bodytext"> 
-            <p>To learn more about GIVE, visit our <a href = "https://www.giveusc.com/" target="_blank">website</a>, <a href= "https://www.instagram.com/give_usc/" target="_blank">Instagram</a>, and <a href="https://open.spotify.com/show/7D2B2WxjeijKsBRaZCspl5?si=5335fd6dc77c4d8d" target="_blank">Spotify</a>.</p><br>
-            <p>If you have some extra time, check out our podcast: The Give Experience.</p> <br>
+            <p>User flows and GUI designs: </p><br>
+            
             <div class = "iframes">
-                <iframe src="https://open.spotify.com/embed/show/7D2B2WxjeijKsBRaZCspl5?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZxRSIJjQbMJVvjWsPJHHXp%2FUI%252FUX-design%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
             </div>
             
-            <p>Or a blog post that I wrote on kiwis!</p> <br>
-        
-
-            <div class = "iframes">
-                <iframe id= "giveweb"src="https://www.giveusc.com/lifestyle/why-i-eat-a-kiwi-a-day" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
+            
         </div>
 
         

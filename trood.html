@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tiffany Yu - Give Foundation</title>
+    <title>Tiffany Yu - Trood</title>
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel= "stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.7.0/keen-slider.min.css"/>
+    <link rel="stylesheet" href="./sliderstyles.css" />
     <style>
         #bigcontainer{
             /* background-color: white; */
@@ -37,17 +38,21 @@
         #bodycontainer{
             background-color: white;
             width:100%;
-            height:1900px;
-            padding-top: 100px;
+            height:3300px;
+            padding-top: 50px;
             
         }
         #bodycontainer iframe{
             width:800px;
             height:500px;
         }
+        
+        #photoslides{
+            width:80%;
+            background-color:white;
+            margin:auto;
+            padding-bottom:50px;
 
-        #giveweb{
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
         .iframes{
             text-align: center;
@@ -55,7 +60,11 @@
             height:400px;
             
         }
-  
+        
+        .bodyphoto{
+            height: 800px;
+            
+        }
 
         .bothcontainer{
             width:70%;
@@ -162,12 +171,14 @@
 
     <!-- this is main content -->
     <div id= "bigcontainer" class = "rellax" data-relax-speed = "7">
+
         <!-- this is title  -->
         <div id="smallcontainer">
-            <p class = "header" id="title"> GIVE Foundation </p>
-            <p class = "bodytext" id="titletext"> I am a founding member and the VP of Communication of a mental health organization 
-                at USC called GIVE Foundation. Our main mission is to help spread mental health resources, knowledge, and practice to 
-                college students. We take on this mission creatively — in forms of podcasts, videos, blog posts, and more.
+            <p class = "header" id="title"> Trood </p>
+            <p class = "bodytext" id="titletext"> I, along with 3 of my teammates, created a food waste tracker app in 36 hours for HackSC, USC's largest hackathon. 
+                Our goal was to find innovative and rewarding ways to reduce food waste — beginning from college students in dining halls. 
+                Trood includes a calendar feature that displays your food preservation progress over time and a community leadership board to compare your 
+                food waste habits to your peers. 
             </p>
         </div>
     </div>
@@ -175,37 +186,50 @@
     <div class="fullcontainer">
         <div class="smallcontainer2">
             <div id = "one_c">
-                <p class = "header3" id = "info">Role: </p>
-                <p class = "bodytext" id = "info_des">VP of Communication</p>
-                <p class = "bodytext">Founding Member</p>
+                <p class = "header3" id = "info">Roles: </p>
+                <p class = "bodytext" id = "info_des">Ideation</p>
+                <p class = "bodytext">UI/UX designs</p>
+
             </div>
             <div id = "two_c">
                 <p class = "header3" id = "info">Duration: </p>
-                <p class = "bodytext" id = "info_des">Jun 2020 - Present</p>
+                <p class = "bodytext" id = "info_des">Feb 4 - 6, 2022</p>
             </div>
             <div id = "three_c">
                 <p class = "header3" id = "info">Tools: </p>
-                <p class = "bodytext" id = "info_des">Adobe Photoshop</p>
+                <p class = "bodytext" id = "info_des">Figma</p>
+                <p class = "bodytext" id = "info_des">Flutter</p>
             </div>
             <div id = "four_c">
                 <p class = "header3" id = "info">Key Skills: </p>
-                <p class = "bodytext" id = "info_des">Social Media</p>
-                <p class = "bodytext" >Strategy Planning</p>
+                <p class = "bodytext" id = "info_des">Figma Prototyping</p>
             </div>
             
         </div>
     </div>
     <!-- body -->
     <div id = "bodycontainer">
+        <div id="photoslides">
+         <!-- photo slides -->
+         <div id="my-keen-slider" class="keen-slider">
+            <div class="keen-slider__slide number-slide1"></div>
+            <div class="keen-slider__slide number-slide2"></div>
+            <div class="keen-slider__slide number-slide3"></div>
+            <div class="keen-slider__slide number-slide4"></div>
+            <div class="keen-slider__slide number-slide5"></div>
+            <div class="keen-slider__slide number-slide6"></div>
+            <div class="keen-slider__slide number-slide7"></div>
+        </div>
+    </div>
+
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
                 Context:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>During the summer of 2020, I went back home to Taiwan amid the pandemic. I quarantined at home 
-                    and I was miles apart from my friends. Although I was with family, staying at home everyday 
-                    eventually took a toll on my mental health. There were days where I just felt very unhappy. 
-                    When I told my friends on how I have been feeling, they also mentioned they felt the same way.</p>
+                <p><a href="https://www.hacksc.com/">HackSC 2022</a> focused on issues related to intersection and innovation with four primary verticals: 
+                    Earth's environment, entertainment, social impact, and the creator economy. As a team, we decided 
+                    to focus on Earth's environment and explore ways we can use technology to reduce our planet's carbon footprint. </p>
             </div>
         </div>
         
@@ -214,42 +238,58 @@
                 Problem:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>We realized that many students were feeling down during this period, but there was a lack of mental 
-                    health support and resources provided specifically for college students. </p>
+                <p>As students, we have seen first hand the amount of food wasted every meal in dining halls. College dining halls 
+                    are usually in the style of a buffet, which allow students to satisfy their hunger with an “all you can eat” 
+                    approach. However, students often overestimate the amount of food they can eat and take too much food — leading to 
+                    full plates of food thrown away.  </p>
+                <p>To incentivize students to waste less food, we came up with <i>Trood</i>. The name was inspired by the app's 
+                    primary function, which is to track food consumption. </p>
             </div>
         </div>
 
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                Solution:
+                What it does:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>We decided to create a mental health organization that will help normalize conversations of mental 
-                    health with students through podcasts, blogs, and videos. Because we lack the professional expertise, 
-                    we believe our most valuable source of information is our own individual experiences with mental health 
-                    as college students. Through our stories, we hope to destigmatize mental health and show students that 
-                    they are not alone. </p>
+                <p>Trood tracks your daily amount of food waste and shows your progress over time and against your community. 
+                    A user can take a snapshot of their plate whenever they have finished eating and the app will calculate 
+                    the percentage of food left over relative to the size of the plate. To allow for more precise measurements, 
+                    a user can choose to highlight and/or delete areas that the app may have under/over calculated. </p>
 
-                <p>As the VP of Communication, I am primarily in charge of managing the website and our social media accounts. 
-                    I plan and write copy for all social media posts. I also help in creating some of the graphics. Beyond 
-                    building the online presence of our organization, I also help spread word of GIVE through communicating with 
-                    professors and promoting to students in club fairs. </p>
+                <p>On the home page, it displays your current daily performance and quotes and facts to motivate you. 
+                    Trood also includes a calendar feature that displays your performance month to month. There is 
+                    also a community page that includes a leadership board of top performing students to encourage healthy 
+                    competition. </p>
             </div>
         </div>
+
+        <div class = "bothcontainer">
+            <div class = "titlecontainer header3">
+                How we built it:
+            </div>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <p>Beginning with ideation, I sketched out simple wire frames for the main pages and its transitions. 
+                    After deciding on our main pages, we began creating the pages and prototyping. It was my first time 
+                    creating prototypes on Figma but I was able to quickly get the hang of it.  </p>
+
+                <img src="img/sketch.png" class="bodyphoto">
+
+                <p>We planned to build the app using Flutter, but we ran into problems as this was our first time using Flutter. 
+                    We were able to build out the main page but we were ultimately unable to connect the camera feature and other 
+                    pages due to the time constraint. Our Github repo can be found <a href="https://github.com/aaronwong25/trood" target="_blank">here</a>. </p>
+            </div>
+        </div>
+
         
         <div class= "bothcontainer bodytext"> 
-            <p>To learn more about GIVE, visit our <a href = "https://www.giveusc.com/" target="_blank">website</a>, <a href= "https://www.instagram.com/give_usc/" target="_blank">Instagram</a>, and <a href="https://open.spotify.com/show/7D2B2WxjeijKsBRaZCspl5?si=5335fd6dc77c4d8d" target="_blank">Spotify</a>.</p><br>
-            <p>If you have some extra time, check out our podcast: The Give Experience.</p> <br>
+            <p>Our Figma prototype: </p><br>
+            
             <div class = "iframes">
-                <iframe src="https://open.spotify.com/embed/show/7D2B2WxjeijKsBRaZCspl5?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FySEvRDaXVYWtfzZxNr1W4O%2Ftrood%3Fnode-id%3D42%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D42%253A2" allowfullscreen></iframe>                            
             </div>
             
-            <p>Or a blog post that I wrote on kiwis!</p> <br>
-        
-
-            <div class = "iframes">
-                <iframe id= "giveweb"src="https://www.giveusc.com/lifestyle/why-i-eat-a-kiwi-a-day" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
+            
         </div>
 
         
@@ -265,6 +305,9 @@
 	</div>
 
     <!-- javascript plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.7.0/keen-slider.min.js"></script>
+    <script src = "./sliderscript.js"></script>
+
 	<script src= "rellax-master/rellax.min.js"></script>
 
 	<script>

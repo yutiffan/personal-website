@@ -36,7 +36,7 @@
 		}
 
 		#experience{
-			height: 700px;
+			height: 1100px;
 			background-color:#FEF6EB;
 			margin-bottom: 0px;
 			padding-bottom: 0px;
@@ -56,7 +56,7 @@
 		}
 
 		.ex_box{
-			background-color:blue;
+			
 			height: 400px;
 			width:400px;
 			margin:10px;
@@ -66,6 +66,19 @@
 			position:relative;
 			text-align:center;
 			
+		}
+
+		/* temporary */
+		.blackoutbox{
+			background-color:#FEF6EB;
+			height:400px;
+			width:400px;
+			margin:10px;
+			display:inline-block;
+			vertical-align: top;
+			position:relative;
+			text-align:center;
+
 		}
 
 		.ex_logo{
@@ -85,24 +98,35 @@
 			margin-top:70px;
 		}
 
+		#trood_logo{
+			width:250px;
+			margin-top:170px;
+		}
+
+		#wl_logo{
+			width:250px;
+			margin-top:170px;
+		}
+
 		.overlaytext{
 			position:absolute;
 			/* top: 150px;
 			left:80px; */
 			top: 50%;
 			left: 50%;
+			width:90%;
 			transform: translate(-50%, -50%);
 			font-family: neue-haas-unica, sans-serif;
 			font-weight: 200;
 			font-style: normal;
-			font-size:50px;
+			font-size:30px;
 			text-decoration:none;
 			color:white;
 			opacity:0;
 			
 		}
 		.ex_box:hover{
-			background-color: black;
+			background-color: #fb9a47;
 		}
 
 		.ex_box:hover .overlaytext{
@@ -149,17 +173,41 @@
 			<p class = "header" id="experiencetitle"> my experiences </p>
 			<a href = "ttm.html"><div class = "ex_box"> 
 				<img src = "img/ttm.png" alt="ttm_logo" class = "ex_logo" id = "ttm_logo">
-				<div class = "overlaytext">6-month internship</div>  
+				<div class = "overlaytext">
+					
+					Sales and Marketing Intern for 6 months at a skincare company.
+					
+				</div>  
 			</div></a>
 			<a href = "give.html"><div class = "ex_box"> 
 				<img src = "img/give logo.png" alt="give_logo" class = "ex_logo">
-				<div class = "overlaytext">mental health organization</div>
+				<div class = "overlaytext">
+					Founding member and VP of Communication for USC's mental health organization
+				</div>
 			</div></a>
 			
 			<a href ="DT.html"><div class = "ex_box"> 
 				<img src = "img/DT.png" alt="DT_logo" class = "ex_logo" id = "dt_logo">
-				<div class = "overlaytext">USC student newspaper</div>
+				<div class = "overlaytext">Website designer for USC's student-run daily newspaper</div>
 			</div></a>
+
+			<a href ="trood.html"><div class = "ex_box"> 
+				<img src = "img/trood.svg" alt="trood_logo" class = "ex_logo" id = "trood_logo">
+				<div class = "overlaytext">Food waste tracker app for USC's Hackathon</div>
+			</div></a>
+
+			<a href ="wavelength.html"><div class = "ex_box"> 
+				<img src = "img/wavelength.svg" alt="WL_logo" class = "ex_logo" id = "wl_logo">
+				<div class = "overlaytext">A dating app based on music taste</div>
+			</div></a>
+
+			<div class = "blackoutbox"> 
+				<!-- <img src = "img/DT.png" alt="DT_logo" class = "ex_logo" id = "dt_logo"> -->
+				<!-- <div class = "overlaytext">Taiwanese startup</div> -->
+			</div>
+
+			
+
 		</div>
 	</div>
 	<div id = "footer">
