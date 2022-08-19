@@ -37,7 +37,7 @@
         #bodycontainer{
             background-color: white;
             width:100%;
-            height:1700px;
+            height:4000px;
             padding-top: 100px;
             
         }
@@ -49,12 +49,12 @@
         .iframes{
             text-align: center;
             /* background-color: blue; */
-            height:400px;
+            height:500px;
             
         }
         
         .bodyphoto{
-            height: 800px;
+            height: 500px;
             
         }
 
@@ -132,11 +132,11 @@
         }
         
         #info{
-            padding-top:150px;
+            padding-top:120px;
         }
 
         #info_des{
-            padding-top: 30px;
+            padding-top: 20px;
         }
         p{
             margin:0px;
@@ -168,8 +168,8 @@
             <p class = "header" id="title"> Wavelength </p>
             <p class = "bodytext" id="titletext"> Wavelength began in junior year as a final project for my software development course.
                  Wavelength is a dating web app created to connect people based on music taste. Because of my 
-                 personal interest in the project, I wanted to continue building this app out as a personal project. I was able 
-                 to work with different frameworks, such as Firebase, and further build out each page.
+                 personal interest in the project, I continued building this app out as a personal project. Through this personal project, I was able 
+                 to work with the Spotify API and different frameworks, such as Firebase.
             </p>
         </div>
     </div>
@@ -185,7 +185,7 @@
             </div>
             <div id = "two_c">
                 <p class = "header3" id = "info">Duration: </p>
-                <p class = "bodytext" id = "info_des">May 2022 - July 2022</p>
+                <p class = "bodytext" id = "info_des">May 2022 - August 2022</p>
             </div>
             <div id = "three_c">
                 <p class = "header3" id = "info">Tools: </p>
@@ -193,10 +193,13 @@
                 <p class = "bodytext" id = "info_des">React</p>
                 <p class = "bodytext" id = "info_des">Firebase</p>
                 <p class = "bodytext" id = "info_des">Material UI</p>
+                <p class = "bodytext" id = "info_des">Github</p>
             </div>
             <div id = "four_c">
                 <p class = "header3" id = "info">Key Skills: </p>
                 <p class = "bodytext" id = "info_des">Front-end development</p>
+                <p class = "bodytext" id = "info_des">Back-end development</p>
+                <p class = "bodytext" id = "info_des">API Integration</p>
             </div>
             
         </div>
@@ -244,28 +247,46 @@
             <div class = "contentcontainer bodytext" id = "titletext">
                 <p>For front end, I used Figma to create the UI/UX designs and React to build the actual app. For back end, 
                     I used Firebase realtime database to store the users. I decided to use Firebase instead of Postgres because 
-                    the data would not be limited to local usage. Moreover, Firebase would allow me to easily deploy the app to the web.</p>
+                    the data would not be limited to local usage. Moreover, Firebase would allow me to easily deploy the app to the web. 
+                    In terms of overall app design, I decided to create 7 pages: landing page, log in, sign up, home, profile, spotify 
+                    connection, and matches. </p>
 
                 
             </div>
         </div>
 
-        <!-- <div class = "bothcontainer">
+        <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                How we built it:
+                How I built it:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>Beginning with ideation, I sketched out simple wire frames for the main pages and its transitions. 
-                    After deciding on our main pages, we began creating the pages and prototyping. It was my first time 
-                    creating prototypes on Figma but I was able to quickly get the hang of it.  </p>
+                <p>Extending off the front-end prototype I built from class with Material UI and ReactJS, I first focused on connecting 
+                    the realtime database from Firebase to my app. I pushed data to Firebase after a user has signed up and retrieved data 
+                    when displaying the profiles on the discover page.
+                </p>
+                <p>My biggest goal for this personal project was connecting the Spotify API with my application. By doing so, I would be 
+                    able to retrieve accurate data of a user's listening habits. This meant that users did not have to manually fill out 
+                    what their favorite music were. 
+                </p>
+                <p>
+                    Looking at the web API docs from Spotify, I found out that the API is based on REST principles and returns JSON data. 
+                    Spotify provides multiple API endpoints with its own unique paths, so users can choose depending on what data they want 
+                    to receive. Since Wavelength is a dating app based on an individual's music taste, I decided to get a Spotify 
+                    <a href="https://developer.spotify.com/documentation/web-api/reference/#/operations/get-users-top-artists-and-tracks">user's top 
+                    artists and tracks</a>. I also wanted to display their Spotify profile picture so I needed to get their 
+                    <a href = "https://developer.spotify.com/documentation/web-api/reference/#/operations/get-current-users-profile">user profile</a> as well. 
+                </p>
 
-                <img src="img/sketch.png" class="bodyphoto">
-
-                <p>We planned to build the app using Flutter, but we ran into problems as this was our first time using Flutter. 
-                    We were able to build out the main page but we were ultimately unable to connect the camera feature and other 
-                    pages due to the time constraint. Our Github repo can be found <a href="https://github.com/aaronwong25/trood" target="_blank">here</a>. </p>
+                <p> Since both of these endpoints request access to a user's private data, I needed to get the user's permission using the authorization 
+                    code flow (shown below).  </p>
+                
+                <img class= "bodyphoto" src="img/authorizationflow.png"> 
+                <p>
+                    Once authorized and connected to the Spotify API, I used axios to get the data and store it on Firebase. 
+                </p>
             </div>
-        </div> -->
+        </div>
+        
 
         
         <div class= "bothcontainer bodytext"> 
@@ -275,6 +296,21 @@
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZxRSIJjQbMJVvjWsPJHHXp%2FUI%252FUX-design%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
             </div>
             
+            <br><p>Connection to Spotify Web API: </p><br>
+            <div class = "iframes">
+                <video width="800" height="450" controls>
+                <source src="spotify profile demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <br><p>Sign Up Authorization: </p><br>
+            <div class = "iframes">
+                <video width="800" height="450" controls>
+                <source src="sign up demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
             
         </div>
 
