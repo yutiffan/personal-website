@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tiffany Yu - Daily Trojan</title>
+    <title>Tiffany Yu - My Friend Morgan</title>
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel="stylesheet" href="https://use.typekit.net/mjh5pzt.css">
     <link rel= "stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.7.0/keen-slider.min.css"/>
+    <link rel="stylesheet" href="./sliderstyles.css" />
     <style>
         #bigcontainer{
             /* background-color: white; */
@@ -37,7 +38,7 @@
         #bodycontainer{
             background-color: white;
             width:100%;
-            height:2000px;
+            height:3200px;
             padding-top: 100px;
             
         }
@@ -46,12 +47,17 @@
             height:500px;
         }
 
-
         .iframes{
             text-align: center;
             /* background-color: blue; */
+            height:500px;
+            
         }
-
+        
+        .bodyphoto{
+            height: 500px;
+            
+        }
 
         .bothcontainer{
             width:70%;
@@ -74,13 +80,11 @@
             width:80%;
             float:left;
             line-height: 1.8;
-            
         }
         .contentcontainer p{
             margin-bottom: 40px;
         }
 
-   
         #one_c{
             /* background-color: yellow; */
             width:22%;
@@ -129,11 +133,11 @@
         }
         
         #info{
-            padding-top:150px;
+            padding-top:120px;
         }
 
         #info_des{
-            padding-top: 30px;
+            padding-top: 20px;
         }
         p{
             margin:0px;
@@ -142,8 +146,6 @@
         #footer{
             background-color: white;
         }
-        
-  
     </style>
 
 </head>
@@ -162,13 +164,13 @@
 
     <!-- this is main content -->
     <div id= "bigcontainer" class = "rellax" data-relax-speed = "7">
+
         <!-- this is title  -->
         <div id="smallcontainer">
-            <p class = "header" id="title"> Daily Trojan </p>
-            <p class = "bodytext" id="titletext"> I am the web designer for Daily Trojan, the school newspaper of
-                 the University of Southern California. I create website layouts using Figma for Daily Trojan's special
-                  online projects. I also collaborate with website developers to make sure the end product is close to 
-                  the design. 
+            <p class = "header" id="title"> My Friend Morgan </p>
+            <p class = "bodytext" id="titletext"> As the capstone project of my CS degree, I worked with 4 other students 
+                to create an ethical simulation that would be used by professors in USC Marshall School of Business as an 
+                exercise to discuss about one's own ethical behavior. 
             </p>
         </div>
     </div>
@@ -176,22 +178,28 @@
     <div class="fullcontainer">
         <div class="smallcontainer2">
             <div id = "one_c">
-                <p class = "header3" id = "info">Role: </p>
-                <p class = "bodytext" id = "info_des">Web Designer</p>
+                <p class = "header3" id = "info">Roles: </p>
+                <p class = "bodytext" id = "info_des">UI/UX designs</p>
+                <p class = "bodytext">Front-end developer</p>
+                <p class = "bodytext">Back-end developer</p>
+
             </div>
             <div id = "two_c">
                 <p class = "header3" id = "info">Duration: </p>
-                <p class = "bodytext" id = "info_des">Aug 2021 - Present</p>
+                <p class = "bodytext" id = "info_des">Jan 2023 - May 2023</p>
             </div>
             <div id = "three_c">
                 <p class = "header3" id = "info">Tools: </p>
                 <p class = "bodytext" id = "info_des">Figma</p>
-                <p class = "bodytext" >Adobe Illustrator</p>
+                <p class = "bodytext" id = "info_des">React / React Bootstrap </p>
+                <p class = "bodytext" id = "info_des">Axios </p>
+                <p class = "bodytext" id = "info_des">MongoDB </p>
             </div>
             <div id = "four_c">
                 <p class = "header3" id = "info">Key Skills: </p>
-                <p class = "bodytext" id = "info_des">Website design</p>
-                <p class = "bodytext" >Teamwork</p>
+                <p class = "bodytext" id = "info_des">UI design</p>
+                <p class = "bodytext" id = "info_des">Creating an API/API calls</p>
+                <p class = "bodytext" id = "info_des">Server-side events </p>
             </div>
             
         </div>
@@ -200,48 +208,74 @@
     <div id = "bodycontainer">
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                Overview:
+                Context:
             </div>
             <div class = "contentcontainer bodytext" id = "titletext">
-                <p>My first project to work on was a campus return website called “The New Normal”. I was tasked 
-                    to design a website that would include articles, videos, and photos related to COVID on campus. </p>
+                <p>As a team of five, we worked with USC Marshall Business 
+                    School's <a href="https://www.marshall.usc.edu/why-marshall/teaching-and-innovation/experiential-learning-center">Experiential 
+                    Learning Center</a> (ELC) to develop an ethical simulation. This ethical simulation would be used in future business classes by 
+                    professors to teach about ethics in business settings. We held bi-weekly stakeholder calls with the head coordinators of the ELC 
+                    to update on our progress and to ensure we are on the right path. </p>
+
             </div>
         </div>
-
-        <div class= "iframes">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F28e6AGTXX2h81pulbXtbJe%2FDT%253A-campus-return%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-        </div>
-
-        <div class = "bothcontainer">
-            <div class = "titlecontainer header3">
-                &nbsp; 
-            </div>
-            <div class = "contentcontainer bodytext" id = "titletext" >
-                <p>Below is the final product or you can visit the page <a href = "https://dailytrojan.com/projects/fa22/dt-new-normal/index.html">here</a>. </p>
-            </div>
-        </div>
-
-        <div class= "iframes">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
-                src="https://dailytrojan.com/projects/fa22/dt-new-normal/index.html" ></iframe>
-        </div>
-        <br>
         
         <div class = "bothcontainer">
             <div class = "titlecontainer header3">
-                &nbsp; 
+                Project Concept:
             </div>
-            <div class = "contentcontainer bodytext" id = "titletext" >
-                <p>My second project was to create a website that celebrates Women's History Month. Since purple is the official color of International Women's Day, 
-                    I wanted it to be the primary color of my designs. The purpose of this website was to assemble all existing and upcoming articles, 
-                    photos, and videos that celebrate women power. </p>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <p>We built an an ethical exercise to give participants a chance to reflect their own ethical behavior and take accountability for it. 
+                    It consisted of an anonymous survey taken by students to and a custom case scenario built based on their answers. This ethical exercise 
+                    can be taken individually or in groups and in the classroom or in the ELC labs. </p>
+                    <img class= "bodyphoto" src="img/survey.png">
             </div>
+            
         </div>
 
-        <div class= "iframes">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIt0Y6X3Bjm89btzZPL5GpZ%2Fdesign-draft%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+        <div class = "bothcontainer">
+            <div class = "titlecontainer header3">
+                Implementation Design:
+            </div>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <p>We decided to to implement a layered architecture separating the application into 3 parts: data layer, logic layer, and UI layer. 
+                    We also designed our database by organizing variables into separate objects, such as Admin object, Session object, Room object, etc. 
+                    Lastly, we designed socket events that will be needed to communicate between client and server.  </p>
+
+
+            </div>
+            <img class= "bodyphoto" src="img/architecture_design.png">
+            <img class= "bodyphoto" src="img/database.png"> 
+            <img class= "bodyphoto" src="img/socket_events.png">
         </div>
+
+        <div class = "bothcontainer">
+            </br>
+            <div class = "titlecontainer header3">
+                User Flow:
+            </div>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <div class = "iframes">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FN9hWLm3GTUV0MBNvS9hL1s%2FMy-Friend-Morgan---Page-Flow%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DgpmeyuQ74Jw6QYB2-1" allowfullscreen></iframe>
+                </div>
+            </br>
+            </div>
+ 
+            <div class = "titlecontainer header3">
+                Final Product:
+            </div>
+            <div class = "contentcontainer bodytext" id = "titletext">
+                <p>Below is a final presentation of our capstone project explaining the tools and skills we learned, as well as what we can improve on. The demo begins at 8:40.</p>
+                <div class = "iframes">
+                    <video width="800" height="450" controls>
+                    <source src="video/capstone_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            </div>
+        </div> 
+        
     </div>
 
     <!-- this is footer -->
@@ -253,6 +287,9 @@
 	</div>
 
     <!-- javascript plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.7.0/keen-slider.min.js"></script>
+    <script src = "./sliderscript.js"></script>
+
 	<script src= "rellax-master/rellax.min.js"></script>
 
 	<script>
